@@ -1,0 +1,33 @@
+/* Sidebar */
+
+
+
+div:has(> .admin-side-menu) {
+    /* background-color: var(--border-color); */
+    /* background-color: #f3f4f6; */
+    /* padding-left: 1rem; */
+}
+
+
+
+.admin-side-menu a.list-group-item {
+    /* padding: 1rem;
+    /* border-radius: 0%; */
+    /* border-start-start-radius: 1em; */
+    /* border-end-start-radius: 1em; */
+    /* position: relative; Ensure parent is positioned */
+    /* z-index: 1; */ */
+    /* Set a higher z-index for the parent */
+
+    /* margin: 0.5rem 0 !important; */
+
+    &:hover {
+        /* background-color: var(--card-color-hover) !important; */
+    }
+
+    &.active {
+        /* background-color: #fff !important; */
+
+    }
+
+}

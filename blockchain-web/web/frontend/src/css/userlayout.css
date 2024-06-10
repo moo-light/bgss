@@ -1,0 +1,27 @@
+/* Custom.css file */
+/* Side menu styles */
+.side-menu {
+  background-color: #f8f9fa;
+  /* Light gray background for side menu */
+  border-radius: 4px;
+  /* Rounded corners for the menu */
+  padding: 1rem;
+  /* Space inside the menu */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+}
+
+/* Dashboard styles */
+.user-dashboard {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
+  /* White background for the content area */
+  border-radius: 4px;
+  /* Rounded corners for the content */
+  padding: 1rem;
+  /* Space inside the content area */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  margin-bottom: 1rem;
+  /* Space between side menu and dashboard */
+}

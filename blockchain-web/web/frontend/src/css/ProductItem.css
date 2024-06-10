@@ -1,0 +1,36 @@
+.product-image-container {
+  position: relative;
+}
+
+.card-img-top {
+  object-fit: cover;
+  position: relative; /* Add this line */
+  box-shadow: 0 0 4px 2px var(--border-color);
+  border-radius: 8px;
+}
+.discount-badge-container {
+  position: absolute;
+  top: 10px;
+  right: calc(
+    10px
+  ); /* 1em is an example of the width of the container, adjust as needed */
+  background-color: var(--primary-color);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  z-index: 1;
+}
+#products .ant-image{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+}
+#products img{
+  position: relative;
+  text-indent: -9999px;
+  width: 100%;
+  aspect-ratio: 1;
+  &:after {
+    position:absolute;
+  }
+}

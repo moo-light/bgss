@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+@import url("https://use.fontawesome.com/release/v6.5.1/css/all.css");
+
+.auth-form {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-left: 200px !important;
+  width: 100vw;
+}
+
+.auth-form-body {
+  background: #f6f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+
+.auth-form h1 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.auth-form h2 {
+  text-align: center;
+}
+
+.auth-form p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+}
+
+.auth-form span {
+  font-size: 12px;
+}
+
+.auth-form a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+.auth-form button {
+  border-radius: 20px;
+  border: 1px solid #ff4b2b;
+  background-color: #ff4b2b;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
+}
+
+.auth-form button:active {
+  transform: scale(0.95);
+}
+
+.auth-form button:focus {
+  outline: none;
+}
+
+.auth-form button.ghost {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+.auth-form form {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 82%;
+  text-align: center;
+}
+
+.auth-form input {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.auth-form .container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 600px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.auth-form .form-container {
+  /*padding-top: 100px;*/
+  position: absolute;
+  top: 0;
+  height: 100%;
+  overflow-y: auto;
+  transition: all 0.6s ease-in-out;
+  z-index: 4;
+}
+
+.auth-form .form-container form button {
+  margin-top: 10%;
+  margin-bottom: 100px;
+}
+
+.auth-form .sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+  padding-top: 200px;
+}
+
+.auth-form .container.right-panel-active .sign-in-container {
+  transform: translateX(100%);
+}
+
+.auth-form .sign-up-container {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.auth-form .sign-up-container h1 {
+  margin-top: 200px;
+}
+
+.auth-form .container.right-panel-active .sign-up-container {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  animation: show 0.6s;
+}
+
+@keyframes show {
+  0%,
+  49.99% {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  50%,
+  100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+
+.auth-form .overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+.auth-form .container.right-panel-active .overlay-container {
+  transform: translateX(-100%);
+}
+
+.auth-form .overlay {
+  background: #6b753c;
+  background: -webkit-linear-gradient(to right, #ffce2b, #ffb341);
+  background: linear-gradient(to right, #e8c135, #ffb341);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  color: #ffffff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.auth-form .container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+.auth-form .overlay-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.auth-form .overlay-left {
+  transform: translateX(-20%);
+}
+
+.auth-form .container.right-panel-active .overlay-left {
+  transform: translateX(0);
+}
+
+.auth-form .overlay-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.auth-form .container.right-panel-active .overlay-right {
+  transform: translateX(20%);
+}
+
+.auth-form .social-container {
+  margin: 20px 0;
+}
+
+.social-container a {
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+}
+
+.auth-form .container.up-panel-active .overlay-up {
+  transform: translateY(0);
+}
+
+.auth-form .forgot-password-container {
+  left: 0;
+  width: 50%;
+  position: absolute;
+  top: 100%;
+  height: 100%;
+  overflow-y: auto; /* Cho phép cuộn nếu cần */
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+  z-index: 5; /* Đặt z-index để đảm bảo nó nằm trên các form khác */
+}
+
+.auth-form .container.up-panel-active .forgot-password-container {
+  top: 0; /* Đưa form vào vị trí nhìn thấy được */
+  opacity: 1; /* Đưa form thành hiện thị hoàn toàn */
+}
+
+.auth-form .sign-in-container,
+.sign-up-container {
+  z-index: 4; /* Để thấp hơn .forgot-password-container */
+}
+
+.auth-form .back-to-login {
+  cursor: pointer;
+}
+
+.auth-form .forgot-password {
+  cursor: pointer;
+}
+
+.terms-conditions a {
+  color: #ce8930; /* your preferred link color */
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Update your CSS file as needed */
+.terms-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semitransparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Make sure it's on top of everything */
+}
+
+.terms-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 600px; /* Control the width of your modal */
+  max-height: 80%;
+  overflow-y: auto;
+  position: relative;
+  z-index: 1001; /* Above the modal background */
+}
+
+.terms-content button {
+  border-radius: 20px;
+  border: 1px solid #ff4b2b;
+  background-color: #ff4b2b;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
+}

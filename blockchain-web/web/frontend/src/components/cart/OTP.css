@@ -1,0 +1,48 @@
+.otp-input {
+  width: 3rem;
+  margin: 0 0.5rem;
+  text-align: center;
+  border-radius: 0.4rem;
+  border: 2px solid #ccc;
+  font-size: 1rem;
+  padding: 0.25rem 0;
+  aspect-ratio: 1;
+}
+
+.otp-input:focus {
+  outline: none;
+  box-shadow: 0 0 2px 1px #007bff;
+}
+/* Tùy chỉnh tiêu đề của thông báo */
+.swal2-title {
+  font-size: 1.5em; /* Kích thước tiêu đề */
+  font-weight: bold; /* Độ đậm của tiêu đề */
+}
+
+/* Tùy chỉnh nội dung của thông báo */
+.swal2-content {
+  font-size: 1em; /* Kích thước nội dung */
+}
+
+/* Tùy chỉnh nút của thông báo */
+.swal2-actions .swal2-confirm {
+  background-color: #3085d6; /* Màu nền của nút xác nhận */
+  color: white; /* Màu chữ của nút xác nhận */
+  border: none; /* Loại bỏ đường viền của nút xác nhận */
+}
+
+/* Hover effect cho nút xác nhận */
+.swal2-actions .swal2-confirm:hover {
+  background-color: #2e75c7; /* Màu nền khi hover của nút xác nhận */
+}
+
+/* Tùy chỉnh nút đóng của thông báo */
+.swal2-close {
+  color: #aaa; /* Màu của nút đóng */
+  font-size: 1.5em; /* Kích thước của nút đóng */
+}
+
+/* Hover effect cho nút đóng */
+.swal2-close:hover {
+  color: #777; /* Màu khi hover của nút đóng */
+}

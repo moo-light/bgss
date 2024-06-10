@@ -1,0 +1,59 @@
+.form-container {
+  background-color: rgb(255 255 255 / 30%)!important;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  /* Màu và độ dày của đường viền */
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+  padding: 20px;
+  /* Khoảng cách bên trong khung */
+  border-radius: 10px;
+  /* Độ cong của góc khung */
+  color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+
+  & input {
+    background-color: rgba(var(--bs-light-rgb), 1) !important;
+    color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+
+  }
+}
+
+.form-title {
+  margin-bottom: 20px;
+  /* Khoảng cách dưới tiêu đề */
+}
+
+.form-input {
+  margin-bottom: 15px;
+  /* Khoảng cách giữa các input */
+}
+
+.form-link,
+.form-title,
+.form-input {
+  /* Màu chữ của các liên kết */
+  color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+}
+
+.form-button {
+  margin-top: 5px;
+  /* Khoảng cách trên nút */
+}
+
+/* footer {
+  color: black !important;
+  position: relative;
+
+  &::before {
+    content: "";
+    margin-top: 2rem;
+    filter: blur(15px) drop-shadow(2px 4px 6px var(--primary-color));
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  &>* {
+    position: relative;
+  }
+} */

@@ -1,0 +1,38 @@
+/* Forum */
+#post_category * {
+    transition: 0.3s;
+}
+
+#post_category .page-item {
+    position: relative;
+    left: 0;
+    overflow: hidden;
+    cursor: pointer;
+    transition: filter 3s;
+
+    &:hover {
+        transition: filter 0.3s;
+        filter: brightness(1.1);
+    }
+
+    &::after {
+        content: " ";
+        position: absolute;
+        transition: 0.3s;
+        left: -4px;
+        top: 0%;
+        bottom: 0%;
+        width: 0px;
+        background-color: var(--primary-color);
+    }
+
+    &.active {
+        left: 5px;
+    }
+
+    &.active::after {
+        left: 0;
+        width: 4px;
+
+    }
+}

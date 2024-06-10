@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #FFA500;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+            position: relative;
+        }
+
+        .header img {
+            width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .header h2 {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #666;
+        }
+
+        .signatures {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .signature {
+            width: 48%;
+            word-wrap: break-word;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #FFA500;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            .header h2 {
+                font-size: 18px;
+            }
+
+            .content, .footer {
+                padding: 10px;
+            }
+
+            .signature {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .signatures {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <title>Contract Detail</title>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <img src="https://i.imgur.com/2D7Wl5h.png" alt="Company Logo"/>
+        <h2>Contract Details</h2>
+    </div>
+    <div class="content">
+        <table>
+            <tr>
+                <th>Detail</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Contract ID</td>
+                <td>[id]</td>
+            </tr>
+            <tr>
+                <td>Action Party Full Name</td>
+                <td>[actionPartyFullName]</td>
+            </tr>
+            <tr>
+                <td>Action Party Address</td>
+                <td>[actionPartyAddress]</td>
+            </tr>
+            <tr>
+                <td>Quantity</td>
+                <td>[quantity] [goldUnit]</td>
+            </tr>
+            <tr>
+                <td>Price Per Ounce (Dollar)</td>
+                <td>[pricePerOunce]$</td>
+            </tr>
+            <tr>
+                <td>Total Cost/Profit (Dollar)</td>
+                <td>[totalCostOrProfit]$</td>
+            </tr>
+            <tr>
+                <td>Transaction Type</td>
+                <td>[transactionType]</td>
+            </tr>
+            <tr>
+                <td>Created At</td>
+                <td>[createdAt]</td>
+            </tr>
+            <tr>
+                <td>Confirming Party</td>
+                <td>[confirmingParty]</td>
+            </tr>
+<!--            <tr>-->
+<!--                <td>Gold Unit</td>-->
+<!--                <td>[goldUnit]</td>-->
+<!--            </tr>-->
+            <tr>
+                <td>Contract Status</td>
+                <td>[contractStatus]</td>
+            </tr>
+        </table>
+        <div class="signatures">
+            <div class="signature">
+                <strong>Action Party Signature:</strong><br>
+                <img src="data:image/png;base64, [signatureActionParty]" alt="Action Party Signature"
+                     style="max-width:100%; height:auto;"/>
+            </div>
+            <div class="signature">
+                <strong>Confirming Party Signature:</strong><br>
+                <img src="data:image/png;base64, [signatureConfirmingParty]" alt="Confirming Party Signature"
+                     style="max-width:100%; height:auto;"/>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Thank you for choosing BGSS Company.</p>
+    </div>
+</div>
+</body>
+</html>

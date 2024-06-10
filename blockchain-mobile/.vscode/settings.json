@@ -1,0 +1,39 @@
+{
+    "cSpell.words": [
+        "dotenv",
+        "signout",
+        "Surffix",
+        "toastification"
+    ],
+    "cmake.sourceDirectory": "E:/leaning-in-fpt/Ky_9/SEP490/blockchain-mobile/build/windows/x64/_deps/nuget-subbuild",
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": false,
+                    "requestCert": false
+                }
+            },
+            "previewLimit": 50,
+            "server": "192.168.1.29",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "huy db",
+            "database": "V1_blockchainserver",
+            "username": "postgres",
+            "password": "6789"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "local",
+            "database": "V1_blockchainserver001",
+            "username": "postgres",
+            "password": "6789"
+        }
+    ],
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "dotnet.defaultSolution": "build/windows/x64/_deps/nuget-subbuild/nuget-populate.sln"
+}

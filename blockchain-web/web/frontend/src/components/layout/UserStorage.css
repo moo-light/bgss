@@ -1,0 +1,15 @@
+.customModal {
+  display: flex;
+  justify-content: center;
+}
+
+.customModalContent {
+  height: 70vh;
+  width: 150%;
+  margin-right: 150px; /* Chỉnh sửa giá trị margin-right theo nhu cầu của bạn */
+}
+/* styles.css hoặc một file CSS module */
+.modal-backdrop.custom-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px); /* Áp dụng hiệu ứng mờ */
+}

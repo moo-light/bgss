@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "blockchain-mobile",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "blockchain-mobile (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "blockchain-mobile (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "command": "scrcpy",
+            "name": "Run scrcpy",
+            "request": "launch",
+            "type": "node-terminal"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Compound debug",
+            "configurations": ["blockchain-mobile","Run scrcpy"]
+        }
+    ]
+    
+}
