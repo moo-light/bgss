@@ -1,8 +1,5 @@
 # BGSS - Blockchain Gold Selling System
 
-### About
-BGSS is an online gold shop that facilitates customers in trading and purchasing gold, incorporating blockchain technology to ensure secure and transparent transactions.
-
 ### Capstone Project - Semester Final
 **Project Name**: Blockchain Gold Selling System (BGSS)
 
